@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Button from './Button'
+import Navbar from  './Navbar'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
+      <React.Fragment>
+      <Navbar />
       <div className="App">
+        <Button/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Hello <code>src/App.js</code> and save to reload.
           </p>
           <a
             className="App-link"
@@ -21,6 +26,7 @@ class App extends Component {
           </a>
         </header>
       </div>
+      </React.Fragment>
     );
   }
 }
